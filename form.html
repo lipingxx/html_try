@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <h2 style="color:red">
+       <pre> 
+	   输入类型：text,password,radio,submit,checkbox,number,color,date,datetime,datetime-local,
+	   email,month,ranger,search,tel,time,url,week。
+	   不支持的输入类型，会被视为text类型！
+	  
+	   input属性：
+	   1> value属性，规定输入字段的初始值；
+	   2> readonly属性，规定输入字段为只读（不能修改）,它不需要值；
+	   3> disabled属性，规定输入字段是禁用的，不需要值。被禁的元素不可用、不可点击、不会提交；
+	   4> size属性，规定输入字段的尺寸（以字符计算）；
+	   5> maxlength属性，规定输入字段允许的最大长度；
+	   6> autocomplete属性，规定输入表单或字段是否应该自动填写值。autocomplete="on" or "off"；
+	   7> novalidate属性，规定在提交表单时不对表单数据进行验证；
+	   8> autofocus属性，布尔属性，规定当前页面加载时，input元素自动获得焦点；
+	   9> formaction
+	   10> formenctype
+	   11> formmethod
+	   12> formnovalidate
+	   13> formtarget
+	   14> height
+	   15> width
+	   16> list
+	   17> min and max
+	   18> multiple
+	   19> pattern
+	   20> placeholder
+	   21> required
+	   22> step 
+	  </pre>
+	  </h2>
+      <h3>input type：text\password，默认宽度是20个字符！value值表示输入框的值。</h3>
+      <form action="action_page.php">
+	     FirstName:<br />
+		 <input type="text" name="firstname" maxlength="25">
+		 <br />
+		 LastName:<br />
+		 <input type="text" name="lastname">
+		 <br />
+		 UserName:<br />
+		 <input type="text" name="username">
+		 <br />
+		 UserPassword(实心圆处理):<br />
+		 <input type="password" name="psw">
+		 <input type="submit" value="Submit">
+	  </form>
+	  
+	  
+	  <h3>input type：radio，value值，checked是设置默认选项。</h3>
+	  <form>
+	      <input type="radio" name="sex" value="male" checked>Male
+		  <br />
+		  <input type="radio" name="sex" value="female" >Female
+	  </form>
+	  <h3>input type：submit，</h3>
+	  <form>
+	      <input type="submit" value="Submit">
+	  </form> 
+	  <br />
+	  <h3>input type:checkbox，定义复选框。</h3>
+	  <form>
+	       <input type="checkbox" name="vehicle" value="Bike">I have a bike
+		   <br />
+		   <input type="checkbox" name="vehicle" value="Car">I have a Car
+	  </form><br />
+	  <h3>input type:number,用于应该包含数字值的输入手段。</h3>
+	  <form>
+	       Quantity(between 1 and 5):
+		   <input type="number" name="quantity" min="1" max="5">
+	  </form>
+	  <h3>input type:date,用于包含日期的输入手段。</h3>
+	  <form>
+	       出生年月:
+		   <input type="date" name="bday" min="1990-01-01" max="2017-10-20">
+		   <input type="submit">
+	  </form>
+	  <h3>input type:color，用于应该包含颜色的输入字段：</h3>
+	  <form>
+	       Select your favorite color:
+	       <input type="color" name="favcolor" value="#ff0000">
+		   <input type="submit" value="Submit">
+	  </form>
+	  <h3>input type:range，用于应该包含一定范围内的值的输入字段，滑块空间显示：</h3>
+	  <form>
+	       Points:
+	       <input type="range" name="points" min="0" max="10" step="0.5">
+		   <input type="submit" value="Submit">
+	  </form>
+	  <h3>input type:month，允许用户选择月份和年份</h3>
+	  <form>
+	       Birthday(month and year):
+	       <input type="month" name="bdaymonth">
+		   <input type="submit" value="Submit">
+	  </form>
+	  
+	  <!-- *********************************************************** -->
+	  <h2>表单元素select：定义下拉列表，</h2>
+	  <p>option元素定义待选择的选项：</p>
+	  <form>
+	      <select name="cars">
+		  <option value="熊丽萍">熊丽萍</option>
+		  <option value="强总">强总</option>
+		  <option value="辉哥">辉哥</option>
+		  <option value="老大">老大</option>
+		  </select>
+		  <br /><br  />
+		  <input type="submit">
+	  </form>
+	  <!-- *********************************************************** -->
+	  <h2>textarea元素：</h2>
+	  
+	  <!-- *********************************************************** -->
+	  <h2>表单元素button：</h2>
+	  <button type="button" onclick="alert('Hello World!')">Click</button>
+	  
+	  <!-- *********************************************************** -->
+	  <h2>HTML5新增表单元素datalist</h2>
+	  <p>datalist元素为input元素预定义选项列表，用户会在输入数据时看到预定义选项的下拉列表。</p>
+	  <p>input 元素的list属性必须引用datalist元素的id属性：
+	     <pre style="font-size:20px" >
+		    input list="browsers"
+		    datalist id="browsers"   /datalist
+	     </pre>
+	  </p>
+	  <form>
+	     <input list="browsers">
+		 <datalist id="browsers">
+		     <option value="IE">
+			 <option value="Firefox">
+			 <option value="Chrome">
+			 <option value="Opera">
+			 <option value="Safari">
+	     </datalist>
+		 <input type="submit"  value="Submit">
+	  </form>
+   </body>
+</html>
+

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<body style="background-color:white"
+      <!--background = "F:/HTML/2.jpg"--> >
+  <h3>table表格</h3>
+  <p>table表格：table标签定义，<br />
+     属性：border边框、frame、cellpadding单元格边距、cellspacing单元格间距、bgcolor背景颜色、background背景图片；
+     tr行：tr标签定义，<br />
+	 th表头：th；属性colspan、bgcolor、background、align <br />
+	 td单元格：td标签定义。bgcolor\background\align<br />
+	 
+  </p>
+  <table border = "1" cellpadding="10" bgcolor="yellow"  >
+     <th bgcolor = red align ="left">左靠表头1</th>
+	 <th background = "F:\HTML\test1.jpg" colspan = "2">表头2，横跨两格</th>
+     <tr> 
+	    <td bgcolor = "red">行1，单元格1</td> 
+		<td bgcolor = "pink"> <b>行1，单元格2.1</b></td>
+		<td bgcolor = "pink">行1，单元格2.2</td>
+	 </tr>
+	 <tr>
+	    <td>行2，单元格1</td> 
+		<td bgcolor = gray><!-- 空格：&nbsp;--></td>
+		<td bgcolor = gray></td>
+	 </tr>
+  </table>
+  <h4>垂直的表头:<h4>
+  <table border = "1" cellspacing="10"  background ="F:\HTML\test4.jpg"<!--边框，间距--> >
+	 <tr>  
+	    <th>姓名</th>
+		<td>XiongLiping</td>
+	 </tr> 
+	 <tr>
+	    <th rowspan = "2">电话,跨两行</th>
+		<td>18874927043</td>
+	 </tr>
+	    <tr> <td align="right">右靠555</td> </tr>
+  </table>
+  <h5>表格里的表格</h5>
+  <table border = "1">
+     <tr>
+	    <td>这个单元格包含一个表格：
+		   <table border = "1">
+		       <tr>
+			       <td>A</td>  <td>B</td>  
+			   </tr>
+			   <tr>
+			       <td>C</td>  <td>D</td>
+			   </tr>
+		   </table>
+		</td>
+	 </tr>
+	 <tr>
+	    <td>这个单元格包含一个列表：
+		    <ul>   
+			   <li>柚子</li>
+			   <li>香蕉</li>
+			   <li>菠萝</li>
+			</ul>
+		</td>
+	 </tr>
+  </table>
+  <p><b>注释：frame 属性无法在 Internet Explorer 中正确地显示。
+              属性：box、above、below、hsides、vsides </b>
+  </p>
+  <table frame="box">
+     <tr>
+	     <th>table with frame="box"</th>
+	 </tr>
+	 <tr>
+	     <th> Month</th> <th>Saving </th>
+	 </tr>
+	 <tr>
+	     <td align = "middle">Jan</td>   <td>100.00</td>
+	 </tr>
+  </table>
+  <br />
+  <table frame="above">
+     <tr>
+	     <th>table with frame="box"</th>
+	 </tr>
+	 <tr>
+	     <th> Month</th> <th>Saving </th>
+	 </tr>
+	 <tr>
+	     <td align = "middle">Jan</td>   <td>100.00</td>
+	 </tr>
+  </table>
+  <br />
+  <table frame="below">
+     <tr>
+	     <th>table with frame="box"</th>
+	 </tr>
+	 <tr>
+	     <th> Month</th> <th>Saving </th>
+	 </tr>
+	 <tr>
+	     <td align = "middle">Jan</td>   <td>100.00</td>
+	 </tr>
+  </table>
+    <br />
+  <table frame="hsides">
+     <tr>
+	     <th>table with frame="box"</th>
+	 </tr>
+	 <tr>
+	     <th> Month</th> <th>Saving </th>
+	 </tr>
+	 <tr>
+	     <td align = "middle">Jan</td>   <td>100.00</td>
+	 </tr>
+  </table>
+  <br />
+  <table frame="vsides">
+     <tr>
+	     <th>table with frame="box"</th>
+	 </tr>
+	 <tr>
+	     <th> Month</th> <th>Saving </th>
+	 </tr>
+	 <tr>
+	     <td align = "middle">Jan</td>   <td>100.00</td>
+	 </tr>
+  </table>
+  <br />
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  </head>
+  <body>
+     <canvas id="myCanvas" width="200" height="100"> </canvas>
+	  <script type="text/javascript">
+	     var c=document.getElementById("myCanvas"); <!--用id来寻找canvas元素-->
+		 var cxt=c.getContext("2d"); <!--创建context对象-->
+	     cxt.fillStyle = "#FF0000";  <!--绘制一个红色的矩形区域-->
+		 cxt.fillRect(0,0,150,75);
+	 </script>
+  </body>
+</html>
